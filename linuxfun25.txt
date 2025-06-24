@@ -1,0 +1,69 @@
+= Instructions for setting up your virtual machine =
+
+!! IMPORTANT !! USE EVENTCODE: devday25
+
+https://linuxone.cloud.marist.edu/#/register?flag=VM
+
+Instructions to set up your virtual server: https://github.com/linuxone-community-cloud/technical-resources/blob/master/faststart/deploy-virtual-server.md
+
+= Log in, navigate, and explore! =
+
+$ cd ~​
+$ mkdir test​
+$ cd test​
+$ touch file1​
+$ touch file2​
+$ ls file1​
+$ rm file1​
+$ pwd​
+$ cd /​
+$ ls -l
+
+= Learn about your system​ =
+
+$ cat /etc/*release​
+$ lscpu​
+$ df​
+$ ps aux​
+$ date​
+$ lsmod​
+$ ip addr​
+$ man ip
+
+= Install software & edit a file =
+
+$ cd​
+$ sudo dnf install nano​
+$ nano test/file2
+
+= Build a website! =
+
+$ sudo dnf install httpd​
+$ sudo systemctl start httpd​
+$ sudo systemctl enable httpd​
+$ sudo systemctl status httpd​
+$ sudo nano /var/www/html/index.html
+
+Write the following in your index.html file: ​
+
+<html> 
+ <body> 
+  <h1>This is my website for IBM TecXchange Virtual Dev Days!</h1>
+ </body> 
+</html>
+
+= Let the traffic in and go! =
+
+$ sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT​
+
+Open a browser type your server IP into the address bar.
+
+= Build some code and have some fun! =
+
+$ sudo dnf install make gcc​
+$ curl -LO https://github.com/vicgeralds/vitetris/archive/refs/tags/v0.59.1.tar.gz​
+$ tar xvf v0.59.1.tar.gz​
+$ cd vitetris-0.59.1/​
+$ ./configure
+$ make​
+$ ./tetris
