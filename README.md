@@ -3,7 +3,7 @@ Materials for the AI and Automation Unpacked IBM TechXchange Virtual Dev Days
 // Virtual Event + Hackathon
 // June 25 - 29, 2025
 
-Slides: 
+Slides: [IBM_TechXchange_DevDays_LinuxONE_Basics_AI.pdf](IBM_TechXchange_DevDays_LinuxONE_Basics_AI.pdf)
 
 Step-by-step instructions (text): [linuxfun25.txt](linuxfun25.txt)
 
