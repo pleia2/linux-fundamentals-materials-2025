@@ -6,3 +6,5 @@ Materials for the AI and Automation Unpacked IBM TechXchange Virtual Dev Days
 Slides: 
 
 Step-by-step instructions (text): 
+
+This workshop uses a virtual machine in the IBM LinuxONE Community Cloud: https://linuxone.cloud.marist.edu/#/register?flag=VM
